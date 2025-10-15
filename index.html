@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brittany Rucker | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #111827;
+        }
+        h1, h2, h3, h4, .nav-btn {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .gradient-text, .active {
+            color: #5b21b6; /* Deep Purple */
+        }
+        .card {
+            background-color: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+        }
+        .card:hover {
+            border-color: #a78bfa;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07);
+        }
+        .nav-btn {
+            transition: all 0.3s ease;
+            position: relative;
+            color: #374151;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .nav-btn:hover {
+            color: #5b21b6;
+        }
+        .nav-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 80%;
+            height: 3px;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='5' viewBox='0 0 100 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,2.5 Q25,0 50,2.5 T100,2.5' stroke='%235b21b6' stroke-width='3' fill='none'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        .scribble {
+            position: absolute;
+            bottom: -15px;
+            left: -10px;
+            width: 80px;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 15 Q 25 5, 45 15 T 85 15' stroke='%235b21b6' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+        }
+        .arrow-scribble {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 25 C 20 10, 30 40, 45 25' stroke='%235b21b6' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M35 18 L 45 25 L 35 32' stroke='%235b21b6' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen p-4 sm:p-6 lg:p-8 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Header and Navigation -->
+            <header class="flex flex-col sm:flex-row justify-between items-center py-6">
+                <div class="text-center sm:text-left mb-4 sm:mb-0">
+                    <h1 class="text-4xl font-bold text-gray-900">Brittany (Sarah) R.</h1>
+                    <p class="text-lg text-gray-600 font-medium">Portfolio</p>
+                </div>
+                <nav class="flex space-x-8">
+                    <button id="nav-about" class="nav-btn text-xl active">About Me</button>
+                    <button id="nav-course" class="nav-btn text-xl">Gen AI Course</button>
+                </nav>
+            </header>
+
+            <main>
+                <!-- Page 1: About Me -->
+                <div id="page-about">
+                    <!-- Hero Section -->
+                    <section class="mt-8 mb-16">
+                        <div class="flex flex-col md:flex-row items-center gap-8 card p-8 md:p-12 border-4 border-black">
+                            <div class="md:w-3/4 text-center md:text-left">
+                                <h2 class="text-5xl md:text-6xl font-bold mb-4 text-gray-900 leading-tight">
+                                    Engineering Program Manager
+                                </h2>
+                                <p class="text-gray-700 text-lg leading-relaxed mt-4">
+                                    Detail-oriented technical program manager delivering high-impact projects in ad-tech, space defense, autonomous vehicles, and defense munitions capabilities.
+                                </p>
+                            </div>
+                            <div class="md:w-1/4 flex justify-center">
+                                <img src="uploaded:headshot-34.jpg-945240ef-b6c6-4d21-b2f3-873d0356faa0" alt="Brittany Rucker" class="rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-black shadow-lg">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Skills & Technologies -->
+                    <section class="mb-16">
+                        <h3 class="text-4xl section-title text-gray-900">Skills & Technologies<span class="scribble"></span></h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="card p-6 border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-3 gradient-text">Technical Domains</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li>Ad-Tech</li>
+                                    <li>Aerospace Defense & UAV Systems</li>
+                                    <li>Space Mission Systems</li>
+                                    <li>Consumer Privacy & Data Compliance</li>
+                                    <li>Regulatory & Compliance Readiness</li>
+                                </ul>
+                            </div>
+                            <div class="card p-6 border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-3 gradient-text">Functional Skills</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li>Agile & Scrum Methodologies</li>
+                                    <li>Product Launch Management</li>
+                                    <li>Systems Engineering V-Model</li>
+                                    <li>Data Analysis & Reporting</li>
+                                    <li>Risk Management & Mitigation</li>
+                                </ul>
+                            </div>
+                            <div class="card p-6 border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-3 gradient-text">Tools & Software</h4>
+                                <p class="text-gray-700">
+                                    Tableau, Google Collab, GitHub, mySQL, Jupyter Notebook, Looker Studio, Jira, Miro, Smartsheets, Microsoft Office Suite, Google Suite, Asana, LucidChart, Canva.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Work Experience -->
+                    <section class="mb-16">
+                         <h3 class="text-4xl section-title text-gray-900">Professional Experience<span class="scribble"></span></h3>
+                         <div class="space-y-12">
+                            <div class="card p-8 border-2 border-black">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-2">
+                                    <div>
+                                        <h4 class="text-3xl font-bold gradient-text">Engineering & Technical Program Manager</h4>
+                                        <p class="text-xl font-medium text-gray-800">Google LLC</p>
+                                    </div>
+                                    <span class="text-gray-600 mt-2 sm:mt-0 font-semibold">Sep 2019 – Present</span>
+                                </div>
+                                <ul class="list-disc list-inside space-y-3 text-gray-700 mt-4">
+                                    <li>Drove product launch of 'My Ad Center' (MAC), leading end-to-end integration across YouTube, Search, Shopping, Gmail, and Discover, resulting in ~XX million daily active users.</li>
+                                    <li>Increased sprint velocity by X% (YOY) for a 27-member engineering team by establishing robust Scrum processes.</li>
+                                    <li>Uncovered 7 critical data infrastructure misconfigurations impacting consumer privacy and strategized resolution plans, leading to the deprecation of high-risk applications.</li>
+                                    <li>Executed product compliance for E.U. Digital Services Act (DSA) & Digital Markets Act (DMA), achieving 100% compliance 4-weeks ahead of schedule.</li>
+                                </ul>
+                            </div>
+                             <div class="card p-8 border-2 border-black">
+                                 <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-2">
+                                     <div>
+                                        <h4 class="text-3xl font-bold gradient-text">Technical Program Manager | Developmental Engineer</h4>
+                                        <p class="text-xl font-medium text-gray-800">United States Air Force</p>
+                                    </div>
+                                    <span class="text-gray-600 mt-2 sm:mt-0 font-semibold">May 2012 – Jul 2019</span>
+                                </div>
+                                <ul class="list-disc list-inside space-y-3 text-gray-700 mt-4">
+                                    <li>Managed space, munitions, UAV, and sensor integration projects with budgets ranging from $3M to $153M.</li>
+                                    <li>Led a 60-member team for a $153M mission systems upgrade at Cape Canaveral, relocating 25 critical systems with zero range downtime.</li>
+                                    <li>Managed a $1B satellite network program portfolio, reducing the schedule by 4 months and avoiding a $300k cost increase.</li>
+                                    <li>Established the division's first autonomous vehicle capability roadmap, directing a successful $2M flight demonstration.</li>
+                                </ul>
+                            </div>
+                         </div>
+                    </section>
+                </div>
+
+                <!-- Page 2: Course Information -->
+                <div id="page-course" class="hidden">
+                    <section class="mt-8 mb-16">
+                        <div class="text-center bg-violet-100 rounded-2xl p-8 md:p-12 border-4 border-black">
+                             <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">Generative AI for Work & Research</h2>
+                             <p class="text-lg text-gray-700 max-w-3xl mx-auto">An 8-week live cohort course focused on leveraging no-code AI tools for task automation, data analysis, and enhanced productivity.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-4xl section-title text-gray-900">My Weekly Submissions<span class="scribble"></span></h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            
+                            <!-- Module Cards -->
+                            <div class="card p-6 flex flex-col border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-2 gradient-text">Week 1: Websites & Docs</h4>
+                                <p class="text-gray-700 flex-grow">Exploring LLMs to generate text, build no-code websites, and design presentations with AI.</p>
+                                <a href="#" class="mt-4 text-gray-900 hover:text-violet-700 font-bold self-start">View Submission<span class="arrow-scribble"></span></a>
+                            </div>
+
+                            <div class="card p-6 flex flex-col border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-2 gradient-text">Week 2: Data Analysis</h4>
+                                <p class="text-gray-700 flex-grow">Using tools like ChatGPT Code Interpreter to process datasets and generate automated reports.</p>
+                                <a href="#" class="mt-4 text-gray-900 hover:text-violet-700 font-bold self-start">View Submission<span class="arrow-scribble"></span></a>
+                            </div>
+
+                            <div class="card p-6 flex flex-col border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-2 gradient-text">Week 3: Text Analysis</h4>
+                                <p class="text-gray-700 flex-grow">Applying AI for efficient literature reviews, text classification, and sentiment analysis.</p>
+                                <a href="#" class="mt-4 text-gray-900 hover:text-violet-700 font-bold self-start">View Submission<span class="arrow-scribble"></span></a>
+                            </div>
+
+                            <div class="card p-6 flex flex-col border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-2 gradient-text">Week 4: Custom GPTs</h4>
+                                <p class="text-gray-700 flex-grow">Building custom GPTs and interactive chatbots for research assistance and knowledge management.</p>
+                                <a href="#" class="mt-4 text-gray-900 hover:text-violet-700 font-bold self-start">View Submission<span class="arrow-scribble"></span></a>
+                            </div>
+
+                            <div class="card p-6 flex flex-col border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-2 gradient-text">Week 5: Task Automation</h4>
+                                <p class="text-gray-700 flex-grow">Designing AI agents for email responses, literature monitoring, and complex browser-based tasks.</p>
+                                <a href="#" class="mt-4 text-gray-900 hover:text-violet-700 font-bold self-start">View Submission<span class="arrow-scribble"></span></a>
+                            </div>
+
+                            <div class="card p-6 flex flex-col border-2 border-black">
+                                <h4 class="text-2xl font-bold mb-2 gradient-text">Week 6: Communication</h4>
+                                <p class="text-gray-700 flex-grow">Using AI to generate research summaries, scientific figures, and video abstracts.</p>
+                                <a href="#" class="mt-4 text-gray-900 hover:text-violet-700 font-bold self-start">View Submission<span class="arrow-scribble"></span></a>
+                            </div>
+
+                            <div class="card p-6 flex flex-col lg:col-span-3 border-4 border-black">
+                                <h4 class="text-2xl font-bold mb-2 gradient-text">Week 7-8: Capstone Project</h4>
+                                <p class="text-gray-700 flex-grow">Developing and presenting a final AI solution, incorporating feedback from peers and instructors, and showcasing the final project.</p>
+                                <a href="#" class="mt-4 text-gray-900 hover:text-violet-700 font-bold self-start">View Final Project<span class="arrow-scribble"></span></a>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="text-center mt-16 py-6 border-t-2 border-gray-200">
+                <p class="text-gray-600 font-semibold">© 2024 Brittany (Sarah) R.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        // Simple SPA-like navigation
+        const navAbout = document.getElementById('nav-about');
+        const navCourse = document.getElementById('nav-course');
+        const pageAbout = document.getElementById('page-about');
+        const pageCourse = document.getElementById('page-course');
+
+        function showPage(pageToShow, navToActivate) {
+            // Hide all pages
+            pageAbout.classList.add('hidden');
+            pageCourse.classList.add('hidden');
+            // Deactivate all nav buttons
+            navAbout.classList.remove('active');
+            navCourse.classList.remove('active');
+
+            // Show the selected page and activate the nav button
+            pageToShow.classList.remove('hidden');
+            navToActivate.classList.add('active');
+            window.scrollTo(0, 0); // Scroll to top on page change
+        }
+
+        navAbout.addEventListener('click', () => {
+            showPage(pageAbout, navAbout);
+        });
+
+        navCourse.addEventListener('click', () => {
+            showPage(pageCourse, navCourse);
+        });
+    </script>
+</body>
+</html>
+
+
+
